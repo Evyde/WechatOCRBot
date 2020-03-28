@@ -23,7 +23,7 @@ class MessageSender(object):
 
     def config(self, config):
         if self.__method == "serverchan":
-            self.__sender = ServerChan(config)
+            self.__sender = ServerChanSender(config)
         elif self.__method == "smtp":
             self.__sender = SMTPSender(config)
         elif self.__method == "console":
@@ -43,7 +43,7 @@ class MessageSender(object):
         return self.__method
 
 
-class ServerChan(object):
+class ServerChanSender(object):
     __sckey = ""
     __url = "https://sc.ftqq.com/"
     __header = {
