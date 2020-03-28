@@ -88,6 +88,7 @@ class ConsoleSender(object):
 
     def send(self, msg):
         print("《%s》" % msg['title'])
+
         print(msg['content'])
         return "控制台输出成功！"
 
