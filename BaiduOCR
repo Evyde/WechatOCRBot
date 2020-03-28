@@ -5,13 +5,13 @@
 	    with open(filePath, 'rb') as fp:
 	        return fp.read()
 
-  #appid
-  ID = '19124804'
+  	#appid
+ 	 ID = '19124804'
 	KEY = 'cCMaB793Gff1w6yE9HojaE4z'
-  SECRET_KEY = 'PMMOEcom53RHgXpwXfoHObilbf4V3oQe'
+  	SECRET_KEY = 'PMMOEcom53RHgXpwXfoHObilbf4V3oQe'
 	
 	client = AipOcr(ID, KEY, SECRET_KEY)
 	saveFileName = "1.jpg"
-  image = get_file_content(saveFileName)
-  bs = client.basicGeneral(image);
-  print(bs)
+  	image = get_file_content(saveFileName)
+  	bs = client.basicGeneral(image);
+ 	print(bs)
